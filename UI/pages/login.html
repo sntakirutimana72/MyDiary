@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WELCOME</title>
+  <title>NEW ACCOUNT</title>
   <script src="../js/homepage.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel='stylesheet' type="text/css" href="../css/core-view.css" />
@@ -20,12 +20,26 @@
       </span>
     </a>
     <a iheader-els left-link for-help href="./help.html">Help</a></li>
-    <a iheader-els left-link for-in href="./register.html">Register</a></li>
-    <a iheader-els left-link for-up href="./login.html">Login</a></li>
+    <a iheader-els left-link for-up href="./register.html">register</a></li>
     </ul>
   </div>
 
-  <div i-body></div>
+  <div i-body>
+    <div i-nav at-left></div>
+
+    <div i-nav at-right>
+      <div nav-element authenticator>
+        <div form-title>LOG IN</div>
+        <form login>
+          <label for-username>Username:</label>
+          <input type="text" placeholder="Username or Email">
+          <label for-password>Password:</label>
+          <input type="password" placeholder="password">
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
 
 </body>
 
