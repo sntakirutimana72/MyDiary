@@ -1,0 +1,19 @@
+{
+  "name": "mydiary",
+  "version": "1.0.0",
+  "description": "It's a Web-app reserved for personal journal entries and other information worth keeping on a daily basis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sntakirutimana72/MyDiary.git"
+  },
+  "author": "NTAKIRUTIMANA Steven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sntakirutimana72/MyDiary/issues"
+  },
+  "homepage": "https://github.com/sntakirutimana72/MyDiary#readme"
+}

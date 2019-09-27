@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(25, 25, 55);
+}
+
+[content-nav] {
+  padding: 25px 80px;
+}
+
+div[cont-nav-el] {
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+
+div[cont-nav-el] div[data] {
+  position: absolute;
+  left: 300px;
+  top: 40px;
+}
+
+div[data] > div {
+  padding: 30px;
+  color: burlywood;
+  border-radius: 0 0 15px 15px;
+  background-color: rgb(20, 28, 55);
+}
+
+div[data] > label {
+  padding: 5px 0;
+  display: block;
+  text-align: center;
+  color: blanchedalmond;
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(0, 42, 55);
+}
+
+[cont-nav-el] img {
+  width: 250px;
+  height: 250px;
+}
+
+[i-body] {
+  padding: 2px 20px;
+}
+
+[i-nav] {
+  display: inline-block;
+  width: calc(100% - 260px);
+}
+
+[nav-element] {
+  margin: 8px 0;
+}
+
+[i-nav][at-right] {
+  width: 250px;
+}
+
+form {
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(161, 163, 168);
+}
+
+form > label, input {
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 4px;
+  font-size: 12px;
+  margin: 4px 0;
+  width: 100%;
+}
+
+form > label {
+  color: chocolate;
+}
+
+input {
+  padding: 6px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgba(20, 187, 173, 0.5);
+}
+
+input:focus {
+  border-radius: 4px;
+  border: 2px solid rgb(15, 70, 219)
+}
+
+input[type="submit"] {
+  width: 150px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 10px;
+  margin-left: calc((100% - 160px) / 2);
+}
+
+[form-title] {
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(212, 20, 203);
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(25, 51, 76);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+[gender] {
+  width: calc((100% - 10px) / 3);
+  font-size: 12px;
+  display: inline-block;
+  color: rgb(233, 230, 218);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+[gender] > input {
+  width: auto;
+}
