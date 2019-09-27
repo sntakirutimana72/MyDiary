@@ -1,11 +1,58 @@
+* {
+  font-family: 'Menlo', 'Consolas', 'DejaVu Sans Mon', monospace;
+}
+
 body {
   margin: 0;
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 
-li {
+ul {
   list-style-type: none;
+}
+
+[header-bar] {
+  padding: 5px 50px;
+}
+
+li[header-el] {
+  display: inline-block;
+}
+
+li[at-right] {
+  float: right;
+  padding: 10px 0;
+}
+
+li[header-el] > a {
+  padding: 0 10px;
+  font-size: 13px;
+  color: rgb(81, 238, 165);
+}
+
+li[app-griff] img {
+  width: 40px;
+}
+
+li[app-griff] div {
+  display: inline;
+}
+
+li[app-griff] a {
+  position: relative;
+}
+
+li[app-griff] [name-part] {
+  position: absolute;
+  font-size: 17px;
+  left: 55px;
+  bottom: 14px;
+}
+
+span[first-rad] {
+  color: coral;
 }

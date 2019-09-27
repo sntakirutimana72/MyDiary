@@ -1,26 +1,5 @@
-[i-header] {
-  padding: 2px 30px;
-  border-bottom: 2px solid rgba(223, 197, 224, .2);
-}
-
-[iheader-els] {
-  padding: 4px 0;
-  display: inline-block;
-}
-
-[iheader-els] img {
-  width: 45px;
-}
-
-[iheader-els] span {
-  float: right;
-  color: #cc3;
-  font-size: 18px;
-  padding-top: 10px;
-}
-
-[cname-first-radical] {
-  color: rgb(18, 198, 243);
+body {
+  background-color: rgb(25, 25, 55);
 }
 
 [left-link] {
