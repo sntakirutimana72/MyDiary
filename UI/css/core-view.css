@@ -35,7 +35,7 @@ li[header-el] > a {
 }
 
 li[app-griff] img {
-  width: 40px;
+  width: 50px;
 }
 
 li[app-griff] div {
@@ -49,8 +49,8 @@ li[app-griff] a {
 li[app-griff] [name-part] {
   position: absolute;
   font-size: 17px;
-  left: 55px;
-  bottom: 14px;
+  left: 62px;
+  bottom: 20px;
 }
 
 span[first-rad] {
