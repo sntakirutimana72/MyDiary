@@ -2,14 +2,41 @@ body {
   background-color: rgb(25, 25, 55);
 }
 
-[left-link] {
-  margin: 2px;
-  float: right;
-  color: #000;
-  font-size: 13px;
-  margin-top: 20px;
-  padding: 2px 10px;
-  font-family: 'Trebuchet MS';
+[content-nav] {
+  padding: 25px 80px;
+}
+
+div[cont-nav-el] {
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+
+div[cont-nav-el] div[data] {
+  position: absolute;
+  left: 300px;
+  top: 40px;
+}
+
+div[data] > div {
+  padding: 30px;
+  color: burlywood;
+  border-radius: 0 0 15px 15px;
+  background-color: rgb(20, 28, 55);
+}
+
+div[data] > label {
+  padding: 5px 0;
+  display: block;
+  text-align: center;
+  color: blanchedalmond;
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(0, 42, 55);
+}
+
+[cont-nav-el] img {
+  width: 250px;
+  height: 250px;
 }
 
 [i-body] {
