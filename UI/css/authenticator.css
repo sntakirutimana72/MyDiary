@@ -10,8 +10,13 @@ div[authentic-form] {
   margin-left: calc((100% - 350px) / 2);
 }
 
-form {
+form[login] {
   padding: 15px 60px;
+}
+
+form[register] {
+  padding: 15px 30px;
+  margin-bottom: 15px;
 }
 
 form > label, input {
@@ -33,7 +38,7 @@ input {
   box-sizing: border-box;
 }
 
-input[type="text"]:focus, input[type="password"]:focus {
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus {
   border-radius: 4px;
   border: 2px solid rgb(15, 70, 219);
 }
@@ -60,11 +65,26 @@ input[type="submit"]:focus {
   color: rgb(212, 20, 203);
 }
 
+[gender-cont] {
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 2px solid goldenrod;
+}
+
+input[type="radio"] {
+  margin-bottom: 6px;
+}
+
 [gender] {
   font-size: 12px;
   display: inline-block;
   color: rgb(233, 230, 218);
-  width: calc((100% - 10px) / 3);
+  width: calc((100% - 30px) / 4);
+}
+
+[gender][title-lab] {
+  width: 50px;
+  color: rgb(206, 62, 19);
 }
 
 [gender] > input {

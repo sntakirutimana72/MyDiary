@@ -17,6 +17,8 @@ ul {
 
 [header-bar] {
   padding: 5px 50px;
+  position: sticky;
+  top: 0;
 }
 
 li[header-el] {
