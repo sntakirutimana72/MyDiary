@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   font-family: 'Menlo', 'Consolas', 'DejaVu Sans Mon', monospace;
 }
 
@@ -16,18 +17,20 @@ ul {
 }
 
 [header-bar] {
-  padding: 5px 50px;
+  background-color: rgb(25, 25, 55);
+  padding: 1px 50px;
   position: sticky;
+  z-index: 1;
   top: 0;
 }
 
 li[header-el] {
-  display: inline-block;
+  display: inline;
 }
 
 li[at-right] {
   float: right;
-  padding: 10px 0;
+  padding: 7px 0;
 }
 
 li[header-el] > a {
@@ -37,7 +40,8 @@ li[header-el] > a {
 }
 
 li[app-griff] img {
-  width: 50px;
+  width: 35px;
+  height: 35px;
 }
 
 li[app-griff] div {
@@ -51,8 +55,8 @@ li[app-griff] a {
 li[app-griff] [name-part] {
   position: absolute;
   font-size: 17px;
-  left: 62px;
-  bottom: 20px;
+  left: 48px;
+  bottom: 12px;
 }
 
 span[first-rad] {

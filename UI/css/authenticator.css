@@ -5,13 +5,13 @@ body {
 div[authentic-form] {
   width: 350px;
   margin-top: 30px;
-  border-radius: 20px;
-  background-color: rgb(12, 24, 41);
+  border-radius: 10px;
+  border: 1px solid rgb(12, 1, 51);
   margin-left: calc((100% - 350px) / 2);
 }
 
 form[login] {
-  padding: 15px 60px;
+  padding: 15px 45px;
 }
 
 form[register] {
@@ -19,26 +19,25 @@ form[register] {
   margin-bottom: 15px;
 }
 
-form > label, input {
+form > label, form > input {
   width: 100%;
   font-size: 12px;
-  border-radius: 4px;
   margin-top: 4px;
+  border-radius: 2px;
   margin-bottom: 10px;
 }
 
-form > label {
+form > label, [gender][title-lab] {
   color: chocolate;
 }
 
 input {
-  padding: 6px;
+  padding: 8px;
   border: none;
   margin-bottom: 10px;
-  box-sizing: border-box;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus {
+input[type="text"]:focus, input[type="password"]:focus {
   border-radius: 4px;
   border: 2px solid rgb(15, 70, 219);
 }
@@ -48,9 +47,9 @@ input[type="submit"] {
   cursor: pointer;
   margin-top: 15px;
   background: none;
-  border-radius: 6px;
+  border-radius: 3px;
   color: rgb(81, 238, 165);
-  border: 1px solid rgb(15, 219, 209);
+  border: 1px solid rgb(219, 15, 76);
   margin-left: calc((100% - 160px) / 2);
 }
 
@@ -59,16 +58,17 @@ input[type="submit"]:focus {
 }
 
 [form-title] {
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px 0;
   text-align: center;
-  color: rgb(212, 20, 203);
+  color: rgb(212, 20, 84);
 }
 
 [gender-cont] {
   padding: 2px 6px;
+  margin-bottom: 4px;
   border-radius: 4px;
-  border: 2px solid goldenrod;
+  border: 1px solid goldenrod;
 }
 
 input[type="radio"] {
@@ -76,15 +76,16 @@ input[type="radio"] {
 }
 
 [gender] {
+  padding: 0 2px;
   font-size: 12px;
-  display: inline-block;
+  display: inline;
   color: rgb(233, 230, 218);
-  width: calc((100% - 30px) / 4);
 }
 
 [gender][title-lab] {
   width: 50px;
-  color: rgb(206, 62, 19);
+  padding-right: 10px;
+  border-right: 1px solid;
 }
 
 [gender] > input {
