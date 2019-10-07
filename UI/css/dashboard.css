@@ -109,6 +109,7 @@ ul[left-menu] {
 [nav-col][left-nav] {
   top: 40px;
   bottom: 0;
+  z-index: 3;
   width: 30px;
   position: fixed;
   overflow-y: auto;
@@ -116,6 +117,10 @@ ul[left-menu] {
   background-color: rgb(23, 23, 24);
   -webkit-transition: width .5s;
   transition: width .5s;
+}
+
+[nav-col][left-nav]::-webkit-scrollbar {
+  display: none;
 }
 
 [left-menu-el] {
@@ -166,6 +171,10 @@ ul[left-menu] {
   padding: 20px 5px;
   position: absolute;
   max-height: calc(100% - 50px);
+}
+
+[right-nav]::-webkit-scrollbar {
+  display: none;
 }
 
 div[right-nav-col] {

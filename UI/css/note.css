@@ -1,0 +1,111 @@
+div[box-layout] {
+  margin-top: 40px;
+}
+
+[active-link] span {
+  color: skyblue;
+}
+
+[note-body] {
+  top: 40px;
+  bottom: 0%;
+  left: 30px;
+  padding: 25px;
+  position: absolute;
+  width: calc(100% - 30px);
+  background-color: rgb(28, 29, 29);
+}
+
+[note-body] > div {
+  display: inline-block;
+}
+
+[note-viewer] {
+  border-radius: 5px;
+  width: calc(100% - 320px);
+}
+
+[note-viewer-header] {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 2px;
+  background-color: #fef;
+}
+
+[note-viewer-header] > div {
+  float: left;
+  display: inline-block;
+}
+
+[note-styles-fonts] {
+  padding: 11px;
+  overflow: auto;
+}
+
+div[note-name] {
+  width: 40%;
+  height: inherit;
+}
+
+[note-styles-fonts] > img {
+  display: inline-block;
+}
+
+[note-styles-fonts]::-webkit-scrollbar {
+  display: none;
+}
+
+[note-viewer-header] img {
+  width: 24px;
+  height: 24px;
+}
+
+[note-name] input, [note-viewer-body] input  {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: none;
+  color: rgb(118, 121, 111);
+  font-family: 'Trebuchet MS';
+}
+
+div[note-viewer-body] input {
+  color: #fff;
+}
+
+[note-viewer-body] {
+  top: 80px;
+  bottom: 40px;
+  border-radius: 2px;
+  position: absolute;
+  width: calc(100% - 370px);
+  background-color: rgba(255, 255, 255, .2);
+}
+
+[note-list] {
+  right: 30px;
+  width: 300px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #555;
+  min-height: calc(100% - 65px);
+}
+
+[note-list-header] {
+  padding: 7px;
+  color: orangered;
+  text-align: center;
+  border-radius: 3px 3px 0 0;
+  font-family: 'Trebuchet MS';
+  background-color: rgb(54, 56, 54);
+}
+
+[note-viewer-body] input {
+  padding: 20px;
+}
+
+[note-viewer-footer] {
+  height: 30px;
+}

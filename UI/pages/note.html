@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel='stylesheet' type="text/css" href="../css/core-view.css" />
   <link rel='stylesheet' type="text/css" href="../css/dashboard.css" />
+  <link rel='stylesheet' type="text/css" href="../css/note.css" />
 </head>
 
 <body>
@@ -31,7 +32,7 @@
           </div>
         </div>
       </li>
-      <li header-el at-right><a href="./help-desk.html">HELP</a></li>
+      <li header-el at-right><a href="./help-desk.html">Help</a></li>
     </ul>
   </div>
 
@@ -44,34 +45,28 @@
             <span>Dashboard</span>
           </a>
         </li>
-        <li left-menu-el>
+        <li left-menu-el active-link>
           <a href="./note.html" left-el-link title="Notes">
             <img src="../images/notes.png" alt="note" />
             <span>Note</span>
           </a>
         </li>
         <li left-menu-el>
-          <a href="#" left-el-link title="Contacts">
+          <a href="./contact.html" left-el-link title="Contacts">
             <img src="../images/contact.png" alt="contact" />
             <span>Contact</span>
           </a>
         </li>
         <li left-menu-el>
-          <a href="#" left-el-link title="Schedules">
+          <a href="./schedule.html" left-el-link title="Schedules">
             <img src="../images/schedule.png" alt="schedule" />
             <span>Schedule</span>
           </a>
         </li>
         <li left-menu-el>
-          <a href="#" left-el-link title="To-do list">
+          <a href="./to-do-list.html" left-el-link title="To-do list">
             <img src="../images/to-do-list.png" alt="to-do-list" />
             <span>To-do list</span>
-          </a>
-        </li>
-        <li left-menu-el>
-          <a href="#" left-el-link title="Calendar">
-            <img src="../images/calenda.png" alt="calendar" />
-            <span>Calendar</span>
           </a>
         </li>
         <li left-menu-el tools>
@@ -93,6 +88,31 @@
           </a>
         </li>
       </ul>
+    </div>
+
+    <div note-body>
+      <div note-viewer>
+        <div note-viewer-header>
+          <div note-name>
+            <input type="text" placeholder="Enter Note name">
+          </div>
+          <div note-styles-fonts>
+            <img src="../images/bold.png" title="edit note" />
+            <img src="../images/underline.png" title="Bold style" />
+            <img src="../images/italic.png" title="Italic style" />
+            <img src="../images/lettercase.png" title="Letter cases" />
+          </div>
+        </div>
+        <div note-viewer-body>
+          <input type="text" placeholder="Viewer & Editor">
+          <div note-right-nav></div>
+        </div>
+        <div note-viewer-footer></div>
+      </div>
+      <div note-list>
+        <div note-list-header>My Notes</div>
+        <div note-list-els></div>
+      </div>
     </div>
   </div>
 
