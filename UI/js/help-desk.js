@@ -1,5 +1,3 @@
-const sel = (cssel) => document.querySelector(cssel), 
-sal = (cssel) => document.querySelectorAll(cssel);
 let autoSlideScheduler;
 
 const changeHelpSlide = ({target}) => {

@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  background-color: rgb(0, 25, 51);
 }
 
 a {
@@ -13,13 +14,17 @@ a {
 }
 
 ul {
+  margin: 0;
+  padding: 4px 0;
+  padding-bottom: 1px;
+  padding-right: 10px;
   list-style-type: none;
 }
 
-[header-bar] {
-  background-color: rgb(25, 25, 55);
-  padding: 1px 50px;
+div[header-bar] {
+  background-color: rgb(0, 25, 51);
   position: sticky;
+  width: 100%;
   z-index: 1;
   top: 0;
 }
@@ -30,7 +35,7 @@ li[header-el] {
 
 li[at-right] {
   float: right;
-  padding: 7px 0;
+  padding: 5px 0;
 }
 
 li[header-el] > a {
@@ -40,8 +45,8 @@ li[header-el] > a {
 }
 
 li[app-griff] img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 li[app-griff] div {
@@ -54,9 +59,8 @@ li[app-griff] a {
 
 li[app-griff] [name-part] {
   position: absolute;
-  font-size: 17px;
-  left: 48px;
-  bottom: 12px;
+  bottom: 10px;
+  left: 45px;
 }
 
 span[first-rad] {
