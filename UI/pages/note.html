@@ -90,29 +90,58 @@
       </ul>
     </div>
 
-    <div note-body>
-      <div note-viewer>
-        <div note-viewer-header>
-          <div note-name>
-            <input type="text" placeholder="Enter Note name">
-          </div>
-          <div note-styles-fonts>
-            <img src="../images/bold.png" title="edit note" />
-            <img src="../images/underline.png" title="Bold style" />
-            <img src="../images/italic.png" title="Italic style" />
-            <img src="../images/lettercase.png" title="Letter cases" />
+    <div diary-note>
+      <div note-menu-bar>
+        <input n-m-child type="text" placeholder="Enter Entry Name">
+        <div n-m-child entry-file-ctrls>
+          <img src="../images/note-edit.png" title="Edit" />
+          <img src="../images/note-select.jpg" title="Select All" />
+          <img src="../images/note-copy.png" title="Copy" />
+          <img src="../images/note-cut.png" title="Cut" />
+          <img src="../images/save.png" title="Save" />
+          <img src="../images/note-delete.jpg" title="Delete" />
+        </div>
+        <div n-m-child entry-data-ctrls>
+          <img d-ctrl src="../images/note-bold.png" title="Bold" />
+          <img d-ctrl src="../images/note-underline.png" title="Underline" />
+          <img d-ctrl src="../images/note-italic.png" title="Italic" />
+          <div d-ctrl font-family>
+            <img f-f-ctrl src="../images/note-font-family.png" title="Font Family" />
+            <select f-f-ctrl>
+              <option value="courier" selected>courier</option>
+              <option value="Times New Roman">Times New Roman</option>
+            </select>
           </div>
         </div>
-        <div note-viewer-body>
-          <input type="text" placeholder="Viewer & Editor">
-          <div note-right-nav></div>
-        </div>
-        <div note-viewer-footer></div>
       </div>
-      <div note-list>
-        <div note-list-header>My Notes</div>
-        <div note-list-els></div>
+
+      <div dia-note note-left-nav>
+        <img side-m-img src="../images/note-colors.png" title="Font Color" />
+        <img side-m-img src="../images/note-background-color.png" title="Background color" />
+        <img side-m-img src="../images/note-left-align.png" title="Left" />
+        <img side-m-img src="../images/note-center-align.png" title="Centered" />
+        <img side-m-img src="../images/note-left-align.png" title="Right" />
+        <img side-m-img src="../images/note-uppercase.png" title="UPPERCASE" />
+        <img side-m-img src="../images/note-lowercase.png" title="lowercase" />
       </div>
+
+      <div dia-note note-textField>
+        <div note-textInput contenteditable="true"> </div>
+        <div note-low-nav></div>
+      </div>
+
+      <div dia-note note-r8t-nav>
+        <img side-m-img src="../images/note-recording.png" title="Recordings" />
+        <img side-m-img src="../images/note-audio.png" title="rec001" />
+        <img side-m-img src="../images/note-audio.png" title="rec002" />
+        <img side-m-img src="../images/note-audio.png" title="rec003" />
+        <img side-m-img src="../images/note-audio.png" title="rec004" />
+        <img side-m-img src="../images/note-audio.png" title="rec005" />
+        <img side-m-img src="../images/note-audio.png" title="rec006" />
+        <img side-m-img src="../images/note-audio.png" title="rec007" />
+      </div>
+
+      <div dia-note note-entry-lists></div>
     </div>
   </div>
 

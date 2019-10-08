@@ -1,3 +1,5 @@
+body {background-color: #fff;}
+
 div[box-layout] {
   margin-top: 40px;
 }
@@ -6,106 +8,164 @@ div[box-layout] {
   color: skyblue;
 }
 
-[note-body] {
-  top: 40px;
-  bottom: 0%;
-  left: 30px;
-  padding: 25px;
+[diary-note] {
+  margin-left: 30px;
   position: absolute;
   width: calc(100% - 30px);
+  height: calc(100% - 40px);
   background-color: rgb(28, 29, 29);
 }
 
-[note-body] > div {
-  display: inline-block;
+[note-menu-bar] {
+  height: 70px;
+  background-color: #000;
 }
 
-[note-viewer] {
-  border-radius: 5px;
-  width: calc(100% - 320px);
-}
-
-[note-viewer-header] {
-  height: 50px;
-  padding: 0 20px;
-  border-radius: 2px;
-  background-color: #fef;
-}
-
-[note-viewer-header] > div {
+[dia-note] {
   float: left;
   display: inline-block;
 }
 
-[note-styles-fonts] {
-  padding: 11px;
+div[note-left-nav], div[note-r8t-nav] {
+  width: 50px;
   overflow: auto;
+  height: calc(100% - 70px);
+  background-color: rgb(0, 8, 8);
 }
 
-div[note-name] {
-  width: 40%;
-  height: inherit;
+div[note-left-nav] {
+  padding: 20px 12.5px;
 }
 
-[note-styles-fonts] > img {
-  display: inline-block;
-}
-
-[note-styles-fonts]::-webkit-scrollbar {
+div[note-left-nav]::-webkit-scrollbar, 
+div[note-r8t-nav]::-webkit-scrollbar {
   display: none;
 }
 
-[note-viewer-header] img {
-  width: 24px;
-  height: 24px;
+div[note-textField] {
+  width: calc(100% - 400px);
+  height: calc(100% - 70px);
 }
 
-[note-name] input, [note-viewer-body] input  {
+div[note-textInput] {
   width: 100%;
+  outline: none;
+  padding: 20px;
+  background: none;
+  height: calc(100% - 50px);
+  color: rgb(220, 255, 246);
+}
+
+div[note-low-nav] {
+  height: 50px;
+  background-color: #000;
+}
+
+div[note-entry-lists] {
+  width: 300px;
+  height: calc(100% - 70px);
+}
+
+[n-m-child] {
+  float: left;
+  display: inline-block;
+}
+
+[entry-file-ctrls], div > input[n-m-child] {
+  border-right: 2px solid rgb(26, 25, 25);
+}
+
+input[n-m-child] {
+  width: 30%;
   height: 100%;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 18px;
+  padding: 0 20px;
   background: none;
-  color: rgb(118, 121, 111);
+  color: rgb(180, 6, 113);
   font-family: 'Trebuchet MS';
 }
 
-div[note-viewer-body] input {
-  color: #fff;
+div[n-m-child] {
+  width: 35%;
+  overflow: auto;
+  padding: 22.5px 10px;
 }
 
-[note-viewer-body] {
-  top: 80px;
-  bottom: 40px;
-  border-radius: 2px;
-  position: absolute;
-  width: calc(100% - 370px);
-  background-color: rgba(255, 255, 255, .2);
+div[n-m-child]::-webkit-scrollbar {
+  display: none;
 }
 
-[note-list] {
-  right: 30px;
-  width: 300px;
+div[n-m-child] img, div[n-m-child] div {
+  float: left;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+div[n-m-child] img:not(:last-child) {
+  margin-right: 20px;
+}
+
+div[n-m-child] div[font-family] {
+  width: 150px;
+  padding: 0 1px;
   border-radius: 3px;
-  position: absolute;
-  background-color: #555;
-  min-height: calc(100% - 65px);
+  background-color: rgb(28, 29, 29);
 }
 
-[note-list-header] {
-  padding: 7px;
+div[font-family] [f-f-ctrl] {
+  float: left;
+  display: inline-block;
+}
+
+div[font-family] img {
+  width: 25px;
+  height: 23px;
+}
+
+div[n-m-child] > img:first-child {
+  margin-left: 20px;
+}
+
+div[n-m-child] > img, [side-m-img] {
+  cursor: pointer;
+}
+
+div[font-family] select {
+  width: 118px;
+  height: 23px;
+  border: none;
+  outline: none;
+  font-size: 11px;
+  background: none;
+  margin-left: -17px;
   color: orangered;
-  text-align: center;
-  border-radius: 3px 3px 0 0;
-  font-family: 'Trebuchet MS';
-  background-color: rgb(54, 56, 54);
 }
 
-[note-viewer-body] input {
-  padding: 20px;
+[note-left-nav] [side-m-img] {
+  width: 25px;
+  height: 25px;
 }
 
-[note-viewer-footer] {
-  height: 30px;
+[side-m-img]:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+[note-left-nav] [side-m-img]:nth-child(5) {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+[note-r8t-nav] > img[side-m-img] {
+  width: 50px;
+  height: 35px;
+  padding: 0 7.5px;
+}
+
+[note-r8t-nav] > img[side-m-img]:first-child {
+  height: 50px;
+  padding: 12.5px;
+  background-color: orangered;
 }
