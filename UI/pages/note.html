@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Note Dashboard</title>
-  <script src="../js/left-nav-menu.js"></script>
   <script src="../js/doc-selector.js"></script>
+  <script src="../js/left-nav-menu.js"></script>
+  <script src="../js/note-dashboard.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel='stylesheet' type="text/css" href="../css/core-view.css" />
   <link rel='stylesheet' type="text/css" href="../css/dashboard.css" />
@@ -94,22 +95,29 @@
       <div note-menu-bar>
         <input n-m-child type="text" placeholder="Enter Entry Name">
         <div n-m-child entry-file-ctrls>
-          <img src="../images/note-edit.png" title="Edit" />
-          <img src="../images/note-select.jpg" title="Select All" />
-          <img src="../images/note-copy.png" title="Copy" />
-          <img src="../images/note-cut.png" title="Cut" />
-          <img src="../images/save.png" title="Save" />
-          <img src="../images/note-delete.jpg" title="Delete" />
+          <img nt-edt src="../images/note-edit.png" title="Edit" />
+          <img nt-slc src="../images/note-select.jpg" title="Select All" />
+          <img nt-cpy src="../images/note-copy.png" title="Copy" />
+          <img nt-cut src="../images/note-cut.png" title="Cut" />
+          <img nt-sav src="../images/save.png" title="Save" />
+          <img nt-del src="../images/note-delete.jpg" title="Delete" />
         </div>
         <div n-m-child entry-data-ctrls>
-          <img d-ctrl src="../images/note-bold.png" title="Bold" />
-          <img d-ctrl src="../images/note-underline.png" title="Underline" />
-          <img d-ctrl src="../images/note-italic.png" title="Italic" />
+          <img nt-bold d-ctrl src="../images/note-bold.png" title="Bold" />
+          <img nt-underl d-ctrl src="../images/note-underline.png" title="Underline" />
+          <img nt-itl d-ctrl src="../images/note-italic.png" title="Italic" />
           <div d-ctrl font-family>
             <img f-f-ctrl src="../images/note-font-family.png" title="Font Family" />
             <select f-f-ctrl>
               <option value="courier" selected>courier</option>
               <option value="Times New Roman">Times New Roman</option>
+            </select>
+          </div>
+          <div d-ctrl font-size>
+            <img f-s-ctrl src="../images/note-font-family.png" title="Font Size" />
+            <select f-s-ctrl>
+              <option value="2" selected>2</option>
+              <option value="4">4</option>
             </select>
           </div>
         </div>
@@ -118,16 +126,24 @@
       <div dia-note note-left-nav>
         <img side-m-img src="../images/note-colors.png" title="Font Color" />
         <img side-m-img src="../images/note-background-color.png" title="Background color" />
-        <img side-m-img src="../images/note-left-align.png" title="Left" />
-        <img side-m-img src="../images/note-center-align.png" title="Centered" />
-        <img side-m-img src="../images/note-left-align.png" title="Right" />
-        <img side-m-img src="../images/note-uppercase.png" title="UPPERCASE" />
-        <img side-m-img src="../images/note-lowercase.png" title="lowercase" />
+        <img nt-algn side-m-img src="../images/note-left-align.png" title="Left" />
+        <img nt-algn side-m-img src="../images/note-center-align.png" title="Center" />
+        <img nt-algn side-m-img src="../images/note-left-align.png" title="Right" />
+        <img nt-upper side-m-img src="../images/note-uppercase.png" title="UPPERCASE" />
+        <img nt-lower side-m-img src="../images/note-lowercase.png" title="lowercase" />
       </div>
 
       <div dia-note note-textField>
-        <div note-textInput contenteditable="true"> </div>
-        <div note-low-nav></div>
+        <div note-textInput contenteditable="true"></div>
+
+        <div note-low-nav>
+          <div entry-words>Total: 3,890 words</div>
+          <div ed-zoom-in-out>
+            <span zoom-ctrl>Zoom Out</span>
+            <div zoom-ctrl><span zoom-bar-handler></span></div>
+            <span zoom-ctrl>Zoom In</span>
+          </div>
+        </div>
       </div>
 
       <div dia-note note-r8t-nav>
@@ -141,7 +157,16 @@
         <img side-m-img src="../images/note-audio.png" title="rec007" />
       </div>
 
-      <div dia-note note-entry-lists></div>
+      <div dia-note note-entry-lists>
+        <div entry-l-header>My Entries</div>
+        <div entry-l-container>
+          <!-- <div entry-item>
+            <span entry-it it-icon></span>
+            <span entry-it it-desc>The death of my own mother by Lung cancer</span>
+            <img entry-it it-del src="../images/note-delete.png" title="delete" />
+          </div>-->
+        </div>
+      </div>
     </div>
   </div>
 
