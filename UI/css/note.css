@@ -1,19 +1,5 @@
-body {background-color: #fff;}
-
 div[box-layout] {
   margin-top: 40px;
-}
-
-[active-link] span {
-  color: skyblue;
-}
-
-[diary-note] {
-  margin-left: 30px;
-  position: absolute;
-  width: calc(100% - 30px);
-  height: calc(100% - 40px);
-  background-color: rgb(28, 29, 29);
 }
 
 [note-menu-bar] {

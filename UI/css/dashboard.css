@@ -2,6 +2,14 @@ body {
   background-color: #fef;
 }
 
+[diary-part] {
+  margin-left: 30px;
+  position: absolute;
+  width: calc(100% - 30px);
+  height: calc(100% - 40px);
+  background-color: rgb(28, 29, 29);
+}
+
 div[header-bar] {
   position: fixed;
   border-bottom: 2px solid #111;
