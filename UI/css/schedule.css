@@ -1,0 +1,103 @@
+div[box-layout] {
+  margin-top: 40px;
+}
+
+[diary-schedule] {
+  position: absolute;
+  min-height: calc(100% - 40px);
+}
+
+[diary-schedule] > div {
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
+[sched-calendar] {
+  height: 100%;
+}
+
+[sched-calendar] > div {
+  float: left;
+  display: inline-block;
+}
+
+[sched-cal-months] {
+  width: 60px;
+  height: 100%;
+  overflow: auto;
+  padding: 0 1px;
+  border: 1px solid;
+}
+
+[sched-cal-months]::-webkit-scrollbar {
+  display: none;
+}
+
+[sched-cal-months] span {
+  margin: 2px 0;
+  display: block;
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: center;
+  color: rgb(226, 43, 98);
+  background-color: #000;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+[sched-cal-months] span[nowMonth] {
+  color: cyan;
+  background: none;
+}
+
+[sched-cal-body] {
+  margin: 2px;
+  height: calc(100% - 4px);
+  width: calc(100% - 64px);
+}
+
+[sched-now-dt] {
+  padding: 10px;
+  color: grey;
+  font-size: 18px;
+  padding-bottom: 50px;
+  background-color: #111;
+  font-family: 'Trebuchet MS';
+}
+
+table {
+  width: 100%;
+}
+
+[sched-dts-cont] {
+  height: calc(100% - 120px);
+  background-color: #444;
+}
+
+[sched-dates] {
+  height: 100%;
+}
+
+[sched-week-days] {
+  background-color: #111;
+}
+
+[sched-week-days] th, [sched-dates] td {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  width: calc(100% / 7);
+  color: rgb(230, 165, 25);
+  background-color: #111;
+  font-family: 'Trebuchet MS';
+}
+
+[sched-dates] td {
+  color: #fff;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .04);
+}
+
+td.today {
+  border: 2px solid rgba(255, 102, 0, 0.2);
+}
