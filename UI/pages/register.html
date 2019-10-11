@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>NEW ACCOUNT</title>
+  <script src="../js/register.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='stylesheet' type="text/css" href="../css/core-view.css" />
+  <link rel='stylesheet' type="text/css" href="../css/authenticator.css" />
+</head>
+
+<body>
+  <div header-bar>
+    <ul header-menu-items>
+      <li header-el app-griff>
+        <a logo href="index.html">
+          <div><img src="../images/logo.png" alt="app-logo" /></div>
+          <div name-part><span first-rad>My</span>Diary</div>
+        </a>
+      </li>
+      <li header-el at-right><a href="./help-desk.html">HELP</a></li>
+      <li header-el at-right><a href="./login.html">LOGIN</a></li>
+    </ul>
+  </div>
+
+  <div authentic-form>
+    <div form-title>REGISTER</div>
+    <form register>
+      <label>First & last names</label>
+      <input type="text" placeholder="Both names">
+      <div gender-cont>
+        <div gender title-lab>Gender</div>
+        <div gender>Male<input type="radio" name="gender"></div>
+        <div gender>Female<input type="radio" name="gender"></div>
+        <div gender>Other<input type="radio" name="gender"></div>
+      </div>
+      <label for-email>Email</label>
+      <input type="text" placeholder="e.g: example@my-diary.it">
+      <label for-password>Password</label>
+      <input type="password" placeholder="New password">
+      <label for-repassword>Confirm password</label>
+      <input type="password" placeholder="Confirm password">
+      <input type="submit" value="Register" disabled>
+    </form>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Note Dashboard</title>
+  <script src="../js/doc-selector.js"></script>
+  <script src="../js/left-nav-menu.js"></script>
+  <script src="../js/note-dashboard.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='stylesheet' type="text/css" href="../css/core-view.css" />
+  <link rel='stylesheet' type="text/css" href="../css/dashboard.css" />
+  <link rel='stylesheet' type="text/css" href="../css/note.css" />
+</head>
+
+<body>
+  <div header-bar>
+    <ul header-menu-items>
+      <li header-el app-griff>
+        <a logo href="index.html">
+          <div><img src="../images/logo.png" alt="app-logo" /></div>
+          <div name-part><span first-rad>My</span>Diary</div>
+        </a>
+      </li>
+
+      <li header-el at-right>
+        <div user-acc><i>Hi, NTAKIRUTIMANA</i>
+          <div user-acc-options>
+            <span user-acc-opt-it em>Signed in as</span>
+            <img user-acc-opt-it src="../images/user.png" alt="Profile Picture" />
+            <a user-acc-opt-it edit href="./profile.html">EDIT PROFILE</a>
+            <a user-acc-opt-it logout href="./login.html">LOGOUT</a>
+          </div>
+        </div>
+      </li>
+      <li header-el at-right><a href="./help-desk.html">Help</a></li>
+    </ul>
+  </div>
+
+  <div box-layout>
+    <div left-nav nav-col>
+      <ul left-menu>
+        <li left-menu-el dashboard>
+          <a left-el-link>
+            <img src="../images/dashboard.png" alt="dashboard" />
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li left-menu-el active-link>
+          <a href="./note.html" left-el-link title="Notes">
+            <img src="../images/notes.png" alt="note" />
+            <span>Note</span>
+          </a>
+        </li>
+        <li left-menu-el>
+          <a href="./contact.html" left-el-link title="Contacts">
+            <img src="../images/contact.png" alt="contact" />
+            <span>Contact</span>
+          </a>
+        </li>
+        <li left-menu-el>
+          <a href="./schedule.html" left-el-link title="Schedules">
+            <img src="../images/schedule.png" alt="schedule" />
+            <span>Schedule</span>
+          </a>
+        </li>
+        <li left-menu-el>
+          <a href="./to-do-list.html" left-el-link title="To-do list">
+            <img src="../images/to-do-list.png" alt="to-do-list" />
+            <span>To-do list</span>
+          </a>
+        </li>
+        <li left-menu-el tools>
+          <a left-el-link href="../logout" title="Tools">
+            <img src="../images/tools.png" alt="tools" />
+            <span>Other Tools</span>
+          </a>
+        </li>
+        <li left-menu-el settings>
+          <a left-el-link href="/settings.html" title="Settings">
+            <img src="../images/setting.png" alt="settings" />
+            <span>Settings</span>
+          </a>
+        </li>
+        <li left-menu-el logout>
+          <a left-el-link href="../logout" title="Logout">
+            <img src="../images/logout.png" alt="logout" />
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div diary-note diary-part>
+      <div note-menu-bar>
+        <input n-m-child type="text" placeholder="Enter Entry Name">
+        <div n-m-child entry-file-ctrls>
+          <img nt-edt src="../images/note-edit.png" title="Edit" />
+          <img nt-slc src="../images/note-select.jpg" title="Select All" />
+          <img nt-cpy src="../images/note-copy.png" title="Copy" />
+          <img nt-cut src="../images/note-cut.png" title="Cut" />
+          <img nt-sav src="../images/save.png" title="Save" />
+          <img nt-del src="../images/note-delete.jpg" title="Delete" />
+        </div>
+        <div n-m-child entry-data-ctrls>
+          <img nt-bold d-ctrl src="../images/note-bold.png" title="Bold" />
+          <img nt-underl d-ctrl src="../images/note-underline.png" title="Underline" />
+          <img nt-itl d-ctrl src="../images/note-italic.png" title="Italic" />
+          <div d-ctrl font-family>
+            <img f-f-ctrl src="../images/note-font-family.png" title="Font Family" />
+            <select f-f-ctrl>
+              <option value="courier" selected>courier</option>
+              <option value="Times New Roman">Times New Roman</option>
+            </select>
+          </div>
+          <div d-ctrl font-size>
+            <img f-s-ctrl src="../images/note-font-family.png" title="Font Size" />
+            <select f-s-ctrl>
+              <option value="2" selected>2</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div dia-note note-left-nav>
+        <img side-m-img src="../images/note-colors.png" title="Font Color" />
+        <img side-m-img src="../images/note-background-color.png" title="Background color" />
+        <img nt-algn side-m-img src="../images/note-left-align.png" title="Left" />
+        <img nt-algn side-m-img src="../images/note-center-align.png" title="Center" />
+        <img nt-algn side-m-img src="../images/note-left-align.png" title="Right" />
+        <img nt-upper side-m-img src="../images/note-uppercase.png" title="UPPERCASE" />
+        <img nt-lower side-m-img src="../images/note-lowercase.png" title="lowercase" />
+      </div>
+
+      <div dia-note note-textField>
+        <div note-textInput contenteditable="true"></div>
+
+        <div note-low-nav>
+          <div entry-words>Total: 3,890 words</div>
+          <div ed-zoom-in-out>
+            <span zoom-ctrl>Zoom Out</span>
+            <div zoom-ctrl><span zoom-bar-handler></span></div>
+            <span zoom-ctrl>Zoom In</span>
+          </div>
+        </div>
+      </div>
+
+      <div dia-note note-r8t-nav>
+        <img side-m-img src="../images/note-recording.png" title="Recordings" />
+        <img side-m-img src="../images/note-audio.png" title="rec001" />
+        <img side-m-img src="../images/note-audio.png" title="rec002" />
+        <img side-m-img src="../images/note-audio.png" title="rec003" />
+        <img side-m-img src="../images/note-audio.png" title="rec004" />
+        <img side-m-img src="../images/note-audio.png" title="rec005" />
+        <img side-m-img src="../images/note-audio.png" title="rec006" />
+        <img side-m-img src="../images/note-audio.png" title="rec007" />
+      </div>
+
+      <div dia-note note-entry-lists>
+        <div entry-l-header>My Entries</div>
+        <div entry-l-container>
+          <!-- <div entry-item>
+            <span entry-it it-icon></span>
+            <span entry-it it-desc>The death of my own mother by Lung cancer</span>
+            <img entry-it it-del src="../images/note-delete.png" title="delete" />
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

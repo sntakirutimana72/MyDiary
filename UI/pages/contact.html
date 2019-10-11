@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Addresses Dashboard</title>
+  <script src="../js/doc-selector.js"></script>
+  <script src="../js/left-nav-menu.js"></script>
+  <script src="../js/contact-dashboard.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='stylesheet' type="text/css" href="../css/core-view.css" />
+  <link rel='stylesheet' type="text/css" href="../css/dashboard.css" />
+  <link rel='stylesheet' type="text/css" href="../css/contact.css" />
+</head>
+
+<body>
+  <div header-bar>
+    <ul header-menu-items>
+      <li header-el app-griff>
+        <a logo href="index.html">
+          <div><img src="../images/logo.png" alt="app-logo" /></div>
+          <div name-part><span first-rad>My</span>Diary</div>
+        </a>
+      </li>
+
+      <li header-el at-right>
+        <div user-acc><i>Hi, NTAKIRUTIMANA</i>
+          <div user-acc-options>
+            <span user-acc-opt-it em>Signed in as</span>
+            <img user-acc-opt-it src="../images/user.png" alt="Profile Picture" />
+            <a user-acc-opt-it edit href="./profile.html">EDIT PROFILE</a>
+            <a user-acc-opt-it logout href="./login.html">LOGOUT</a>
+          </div>
+        </div>
+      </li>
+      <li header-el at-right><a href="./help-desk.html">Help</a></li>
+    </ul>
+  </div>
+
+  <div box-layout>
+    <div left-nav nav-col>
+      <ul left-menu>
+        <li left-menu-el dashboard>
+          <a left-el-link>
+            <img src="../images/dashboard.png" alt="dashboard" />
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li left-menu-el>
+          <a href="./note.html" left-el-link title="Notes">
+            <img src="../images/notes.png" alt="note" />
+            <span>Note</span>
+          </a>
+        </li>
+        <li left-menu-el active-link>
+          <a href="./contact.html" left-el-link title="Contacts">
+            <img src="../images/contact.png" alt="contact" />
+            <span>Contact</span>
+          </a>
+        </li>
+        <li left-menu-el>
+          <a href="./schedule.html" left-el-link title="Schedules">
+            <img src="../images/schedule.png" alt="schedule" />
+            <span>Schedule</span>
+          </a>
+        </li>
+        <li left-menu-el>
+          <a href="./to-do-list.html" left-el-link title="To-do list">
+            <img src="../images/to-do-list.png" alt="to-do-list" />
+            <span>To-do list</span>
+          </a>
+        </li>
+        <li left-menu-el tools>
+          <a left-el-link href="../logout" title="Tools">
+            <img src="../images/tools.png" alt="tools" />
+            <span>Other Tools</span>
+          </a>
+        </li>
+        <li left-menu-el settings>
+          <a left-el-link href="/settings.html" title="Settings">
+            <img src="../images/setting.png" alt="settings" />
+            <span>Settings</span>
+          </a>
+        </li>
+        <li left-menu-el logout>
+          <a left-el-link href="../logout" title="Logout">
+            <img src="../images/logout.png" alt="logout" />
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div diary-address diary-part>
+    <div address-form>
+      <div addr-menu-top-bar>
+        <span addr-top>ADDRESS DETAIL</span>
+        <img addr-top src="../images/edit-contact.png" title="Edit" />
+        <img addr-top src="../images/add-contact.jpg" title="New" />
+        <img addr-top src="../images/remove-contact.png" title="Delete" />
+      </div>
+
+      <div addr-fo-fie>
+        <form>
+          <label for="full-names">Full Names</label>
+          <input type="text" placeholder="Full Names">
+          <label for="email">Email Address</label>
+          <input type="email" placeholder="Email Address">
+          <label for="Phone-number">Cell Number :</label>
+          <input type="number" min="0" placeholder="Cell Number">
+        </form>
+
+        <img profpic src="../images/contact.png" title="Add Picture" />
+        <img savepic src="../images/add-contact.jpg" title="Save" /></div>
+      </div>
+    </div>
+
+    <div address-repo>
+      <div addr-repo-header>
+        <img src="../images/contact.png" />
+        <span>Address Repository</span>
+      </div>
+      <div addr-repo-search-e>
+        <input type="text" placeholder="Find address">
+        <img src="../images/search.png" title="Search" />
+      </div>
+      <div addr-repo-list></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
