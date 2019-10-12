@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Addresses Dashboard</title>
+  <title>Schedule Dashboard</title>
   <script src="../js/doc-selector.js"></script>
   <script src="../js/left-nav-menu.js"></script>
-  <script src="../js/contact-dashboard.js"></script>
+  <script src="../js/schedule-dashboard.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel='stylesheet' type="text/css" href="../css/core-view.css" />
   <link rel='stylesheet' type="text/css" href="../css/dashboard.css" />
-  <link rel='stylesheet' type="text/css" href="../css/contact.css" />
+  <link rel='stylesheet' type="text/css" href="../css/schedule.css" />
 </head>
 
 <body>
@@ -52,20 +52,20 @@
             <span>Note</span>
           </a>
         </li>
-        <li left-menu-el active-link>
+        <li left-menu-el>
           <a href="./contact.html" left-el-link title="Contacts">
             <img src="../images/contact.png" alt="contact" />
             <span>Contact</span>
           </a>
         </li>
-        <li left-menu-el>
+        <li left-menu-el active-link>
           <a href="./schedule.html" left-el-link title="Schedules">
             <img src="../images/schedule.png" alt="schedule" />
             <span>Schedule</span>
           </a>
         </li>
         <li left-menu-el tools>
-          <a left-el-link href="../logout" title="Tools">
+          <a left-el-link href="#" title="Tools">
             <img src="../images/tools.png" alt="tools" />
             <span>Other Tools</span>
           </a>
@@ -86,40 +86,52 @@
     </div>
   </div>
 
-  <div diary-address diary-part>
-    <div address-form>
-      <div addr-menu-top-bar>
-        <span addr-top>ADDRESS DETAIL</span>
-        <img addr-top src="../images/edit-contact.png" title="Edit" />
-        <img addr-top src="../images/add-contact.jpg" title="New" />
-        <img addr-top src="../images/remove-contact.png" title="Delete" />
-      </div>
-
-      <div addr-fo-fie>
-        <form>
-          <label for="full-names">Full Names</label>
-          <input type="text" placeholder="Full Names">
-          <label for="email">Email Address</label>
-          <input type="email" placeholder="Email Address">
-          <label for="Phone-number">Cell Number :</label>
-          <input type="number" min="0" placeholder="Cell Number">
-        </form>
-
-        <img profpic src="../images/contact.png" title="Add Picture" />
-        <img savepic src="../images/add-contact.jpg" title="Save" /></div>
+  <div diary-schedule diary-part>
+    <div sched-calendar>
+      <div sched-cal-months></div>
+      <div sched-cal-body>
+        <div sched-now-dt></div>
+        <table sched-week-days>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </table>
+        <table sched-dates></table>
+        <div sched-today-alerts>
+          You have 0 schedule plans today.
+          You have 0 priors on your today to-do list of things.
+        </div>
       </div>
     </div>
 
-    <div address-repo>
-      <div addr-repo-header>
-        <img src="../images/contact.png" />
-        <span>Address Repository</span>
+    <div sched-details>
+      <div sched-form>
+        <div sched-fo-header>
+          <span sched-fo-title>SCHEDULE DETAILS</span>
+          <img src="../images/schedule.png" title="New Schedule" />
+        </div>
+        <form sched-fo-flds>
+          <label for-sched-title>Title</label>
+          <input type="text" placeholder="Enter Schedule name">
+          <label for-sched-desc>Description</label>
+          <textarea placeholder="Schedule details"></textarea>
+          <label for-sched-remind>Time Reminder</label>
+          <div sched-time-remind>
+            <input type="time">
+          </div>
+        </form>
       </div>
-      <div addr-repo-search-e>
-        <input type="text" placeholder="Find address">
-        <img src="../images/search.png" title="Search" />
+
+      <div sched-list>
+        <div sched-l-header>MY SCHEDULES</div>
+        <div sched-l-al></div>
       </div>
-      <div addr-repo-list></div>
     </div>
   </div>
 
