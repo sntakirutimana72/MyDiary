@@ -15,5 +15,23 @@
   "bugs": {
     "url": "https://github.com/sntakirutimana72/MyDiary/issues"
   },
-  "homepage": "https://github.com/sntakirutimana72/MyDiary#readme"
+  "homepage": "https://github.com/sntakirutimana72/MyDiary#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.5.1",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "nodemon": "^1.19.3"
+  }
 }
