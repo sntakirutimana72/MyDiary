@@ -1,13 +1,16 @@
 // All manipulation for schedule dashboard
 
+const allMonths = [
+  'January', 'February', 'March', 'April', 'May', 'June', 'July', 
+  'August', 'September', 'October', 'November', 'December' 
+]
+
 const loadCalendar = () => {
   const now = new Date();
   const monthContainer = sel("div[sched-cal-months]");
 
-  [
-    "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", 
-    "SEP", "OCT", "NOV", "DEC"].forEach((mo_name, mo_no) => {
-    const monthEl = htmlToElement("span", mo_name);
+  allMonths.forEach((mo_name, mo_no) => {
+    const monthEl = htmlToElement("span", mo_name.slice(0, 3).toUpperCase());
     attr(monthEl, "value", mo_no + 1);
     
     if (now.getMonth() + 1 == mo_no + 1) attr(monthEl, "nowMonth", "");
@@ -18,15 +21,17 @@ const loadCalendar = () => {
 }
 
 const loadDaysDate = (course) => {
-  let custom_date;
+  let custom_date = new Date();
+  const year = custom_date.getFullYear();
   const dayTbEl = sel("table[sched-dates]");
 
   if (course) {
-    custom_date = new Date();
-    // 
+    const day = custom_date.getDate(), 
+      month = allMonths[custom_date.getMonth()];
+    text(sel("div[sched-now-dt]"), `${month} ${day} ${year}`);
   } else {
     const month = attr(sel("span[nowMonth]"), "value");
-    custom_date = new Date(`2019-${month}`);
+    custom_date = new Date(`${year}-${month}`);
   }
 
   //  generating maximun month dates

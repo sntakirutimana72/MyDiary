@@ -64,12 +64,6 @@
             <span>Schedule</span>
           </a>
         </li>
-        <li left-menu-el>
-          <a href="./to-do-list.html" left-el-link title="To-do list">
-            <img src="../images/to-do-list.png" alt="to-do-list" />
-            <span>To-do list</span>
-          </a>
-        </li>
         <li left-menu-el tools>
           <a left-el-link href="#" title="Tools">
             <img src="../images/tools.png" alt="tools" />
@@ -96,7 +90,7 @@
     <div sched-calendar>
       <div sched-cal-months></div>
       <div sched-cal-body>
-        <div sched-now-dt>October 11 2019</div>
+        <div sched-now-dt></div>
         <table sched-week-days>
           <tr>
             <th>Sun</th>
@@ -108,15 +102,34 @@
             <th>Sat</th>
           </tr>
         </table>
-        <div sched-dts-cont><table sched-dates></table></div>
+        <table sched-dates></table>
+        <div sched-today-alerts>
+          You have 0 schedule plans today.
+          You have 0 priors on your today to-do list of things.
+        </div>
       </div>
     </div>
 
     <div sched-details>
-      <div sched-form></div>
+      <div sched-form>
+        <div sched-fo-header>
+          <span sched-fo-title>SCHEDULE DETAILS</span>
+          <img src="../images/schedule.png" title="New Schedule" />
+        </div>
+        <form sched-fo-flds>
+          <label for-sched-title>Title</label>
+          <input type="text" placeholder="Enter Schedule name">
+          <label for-sched-desc>Description</label>
+          <textarea placeholder="Schedule details"></textarea>
+          <label for-sched-remind>Time Reminder</label>
+          <div sched-time-remind>
+            <input type="time">
+          </div>
+        </form>
+      </div>
 
       <div sched-list>
-        <div sched-l-header>My Schedules</div>
+        <div sched-l-header>MY SCHEDULES</div>
         <div sched-l-al></div>
       </div>
     </div>
