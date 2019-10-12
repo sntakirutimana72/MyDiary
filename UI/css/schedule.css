@@ -1,0 +1,210 @@
+div[box-layout] {
+  margin-top: 40px;
+}
+
+[diary-schedule] {
+  position: absolute;
+  min-height: calc(100% - 40px);
+}
+
+[diary-schedule] > div {
+  width: 50%;
+  float: left;
+  height: 100%;
+  display: inline-block;
+}
+
+[sched-calendar] > div {
+  float: left;
+  display: inline-block;
+}
+
+[sched-cal-months] {
+  width: 60px;
+  height: 100%;
+  overflow: auto;
+  padding: 0 1px;
+  border: 1px solid;
+}
+
+[sched-cal-months]::-webkit-scrollbar {
+  display: none;
+}
+
+[sched-cal-months] span {
+  margin: 2px 0;
+  display: block;
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: center;
+  color: rgb(226, 43, 98);
+  background-color: #000;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+[sched-cal-months] span[nowMonth] {
+  color: cyan;
+  background: none;
+}
+
+[sched-cal-body] {
+  margin: 2px;
+  height: calc(100% - 4px);
+  width: calc(100% - 64px);
+}
+
+[sched-now-dt] {
+  padding: 10px;
+  color: grey;
+  font-size: 18px;
+  padding-bottom: 50px;
+  background-color: #111;
+  font-family: 'Trebuchet MS';
+}
+
+table {
+  width: 100%;
+}
+
+[sched-dates] {
+  height: 50%;
+  background-color: #444;
+}
+
+[sched-today-alerts] {
+  padding: 10px;
+  color: #fff;
+  margin-top: 3px;
+  height: calc(50% - 123px);
+  font-family: 'Trebuchet MS';
+  background-color: #111;
+}
+
+[sched-week-days] {
+  background-color: #111;
+}
+
+[sched-week-days] th, [sched-dates] td {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  width: calc(100% / 7);
+  color: rgb(230, 165, 25);
+  background-color: #111;
+  font-family: 'Trebuchet MS';
+}
+
+[sched-dates] td {
+  color: #fff;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .04);
+}
+
+td.today {
+  border: 2px solid rgba(255, 102, 0, 0.2);
+}
+
+[sched-details] > div {
+  margin: 3px 2px;
+  height: calc(50% - 6px);
+}
+
+[sched-details] {
+  background-color: #000;
+}
+
+div[sched-form] {
+  background-color: #111;
+}
+
+div[sched-list] {
+  background-color: #222;
+}
+
+[sched-fo-header] img, [sched-fo-header] span {
+  float: left;
+  display: inline-block;
+}
+
+[sched-fo-header], [sched-l-header] {
+  height: 34px;
+  padding: 5px 20px;
+  border-radius: 2px;
+  background-color: rgb(228, 7, 62);
+}
+
+div[sched-l-header] {
+  color: #fff;
+  font-size: 14px;
+  padding-top: 8px;
+  font-family: 'Trebuchet MS';
+  background-color: rgb(6, 182, 50);
+}
+
+[sched-fo-header] img {
+  width: 24px;
+  cursor: pointer;
+}
+
+[sched-fo-header] span {
+  color: #fff;
+  font-size: 14px;
+  padding-top: 4px;
+  width: calc(100% - 24px);
+  font-family: 'Trebuchet MS';
+}
+
+form[sched-fo-flds] {
+  margin: 0 15%;
+  overflow: auto;
+  padding: 10px 0;
+  height: calc(100% - 34px);
+}
+
+form[sched-fo-flds]::-webkit-scrollbar {
+  display: none;
+}
+
+form label, form input, form textarea {
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form input, form textarea {
+  padding: 5px;
+  outline: none;
+  font-size: 13px;
+  margin-top: 3px;
+  background: none;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  border: 2px solid rgba(255, 255, 255, .05);
+}
+
+form input {
+  color: greenyellow;
+}
+
+form input[type='time'] {
+  color: rgb(240, 71, 4);
+}
+
+form > textarea {
+  resize: vertical;
+  color: #fff;
+}
+
+form label {
+  color: aqua;
+  font-size: 12px;
+}
+
+[sched-l-al] {
+  overflow: auto;
+  background-color: #111;
+  height: calc(100% - 34px);
+}
+
+[sched-l-al]::-webkit-scrollbar {
+  display: none;
+}
