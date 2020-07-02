@@ -1,0 +1,58 @@
+[content-nav] {
+  padding: 50px;
+}
+
+[content-nav] td {
+  width: 50%;
+}
+
+[content-nav] tr {
+  display: none;
+}
+
+[content-nav] tr.page-on {
+  display: block;
+}
+
+[content-nav] img {
+  border-radius: 6px;
+  opacity: .6;
+  width: 100%;
+}
+
+[image-data] {
+  padding: 10px;
+}
+
+[text-data] {
+  font-size: 20px;
+  padding-left: 20px;
+  color: #FFFFFF;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+[guide-manuals] {
+  padding: 3px 0;
+  margin-left: calc((100% - 120px) / 2); 
+}
+
+[guide-manuals] > span {
+  opacity: .3;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(218, 25, 105);
+  -webkit-transition: .4s;
+  transition: opacity .4s;
+}
+
+[guide-manuals] > span:hover {
+  opacity: 1;
+}
+
+[guide-manuals] > span.active-manual {
+  opacity: 1;
+}

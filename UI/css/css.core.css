@@ -30,6 +30,8 @@ nav[header-bar] {
   width: 100%;
   z-index: 1;
   top: 0;
+  border-bottom: 1px solid rgba(235, 198, 191, .1);
+  background-color: rgb(50, 35.7, 50);
 }
 
 li[header-el] {
