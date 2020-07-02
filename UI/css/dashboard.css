@@ -366,15 +366,14 @@ img[to-do-i] {
   height: 12px;
   margin: 2px;
   border-radius: 50%;
-  border: 1px solid #ee0;
+  border: 1px solid #0fe;
 }
 
 [to-do-i][do-desc] {
   height: 8px;
   margin: 4px 0;
-  border-radius: 8px;
   width: calc(100% - 52px);
-  background-color: rgba(212, 203, 203, .3);
+  background-color: rgba(212, 203, 203, .7);
 }
 
 /* Mid-nav division */
