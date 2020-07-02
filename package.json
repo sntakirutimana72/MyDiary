@@ -4,7 +4,9 @@
   "description": "It's a Web-app reserved for personal journal entries and other information worth keeping on a daily basis",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "babel-node ./node_modules/mocha/bin/mocha ./server/tests/index.js",
+    "start:server": "babel-node -- app.js",
+    "start:dev": "nodemon --exc babel-node -- app.js"
   },
   "repository": {
     "type": "git",
