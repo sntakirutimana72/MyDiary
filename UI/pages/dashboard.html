@@ -1,197 +1,98 @@
 <!DOCTYPE html>
+
 <html lang="eng">
 
 <head>
   <meta charset="utf-8">
   <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
   <script src="../js/left-nav-menu.js"></script>
   <script src="../js/doc-selector.js"></script>
   <script src="../js/calendar-tool.js"></script>
   <script src="../js/calculator-tool.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel='stylesheet' type="text/css" href="../css/core-view.css" />
-  <link rel='stylesheet' type="text/css" href="../css/dashboard.css" />
+  
+  <link rel='stylesheet' type='text/css' href='../css/css.footer.css' />
+  <link rel='stylesheet' type="text/css" href="../css/css.core.css" />
+  <link rel='stylesheet' type="text/css" href="../css/css.dashboard.css" />
 </head>
 
 <body>
-  <div header-bar>
+    
+  <nav header-bar>
     <ul header-menu-items>
       <li header-el app-griff>
-        <a logo href="../../index.html">
+        <a logo href="../index.html">
           <div><img src="../images/logo.png" alt="app-logo" /></div>
           <div name-part><span first-rad>My</span>Diary</div>
         </a>
       </li>
 
       <li header-el at-right>
-        <div user-acc><i>Hi, NTAKIRUTIMANA</i>
+        <div user-acc><i>Hi, Steven</i>
           <div user-acc-options>
             <span user-acc-opt-it em>Signed in as</span>
             <img user-acc-opt-it src="../images/user.png" alt="Profile Picture" />
-            <a user-acc-opt-it edit href="./profile.html">EDIT PROFILE</a>
-            <a user-acc-opt-it logout href="./login.html">LOGOUT</a>
+            <a user-acc-opt-it edit href="./profile.html">Edit Profile</a>
+            <a user-acc-opt-it logout href="./login.html">Logout</a>
           </div>
         </div>
       </li>
-      <li header-el at-right><a href="./help-desk.html">HELP</a></li>
+      <li header-el at-right><a href="./help.html">Help</a></li>
     </ul>
-  </div>
-
-  <div box-layout>
-    <div left-nav nav-col>
-      <ul left-menu>
-        <li left-menu-el dashboard>
-          <a left-el-link>
-            <img src="../images/dashboard.png" alt="dashboard" />
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li left-menu-el>
-          <a href="./note.html" left-el-link title="Notes">
-            <img src="../images/notes.png" alt="note" />
-            <span>Note</span>
-          </a>
-        </li>
-        <li left-menu-el>
-          <a href="./contact.html" left-el-link title="Contacts">
-            <img src="../images/contact.png" alt="contact" />
-            <span>Contact</span>
-          </a>
-        </li>
-        <li left-menu-el>
-          <a href="./schedule.html" left-el-link title="Schedules">
-            <img src="../images/schedule.png" alt="schedule" />
-            <span>Schedule</span>
-          </a>
-        </li>
-        <li left-menu-el tools>
-          <a left-el-link href="#" title="Tools">
-            <img src="../images/tools.png" alt="tools" />
-            <span>Other Tools</span>
-          </a>
-        </li>
-        <li left-menu-el settings>
-          <a left-el-link href="./settings.html" title="Settings">
-            <img src="../images/setting.png" alt="settings" />
-            <span>Settings</span>
-          </a>
-        </li>
-        <li left-menu-el logout>
-          <a left-el-link href="./login.html" title="Logout">
-            <img src="../images/logout.png" alt="logout" />
-            <span>Logout</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div mid-nav nav-col>
-      <!-- first row that presents available data in store -->
-      <div mid-nav-row-1>
-        <div note-entry-col>
-          <span entry-name>NOTE</span>
-          <span entry-qty>Total: 115 entries</span>
-        </div>
-        <div contact-entry-col>
-          <span entry-name>CONTACT ADDRESS</span>
-          <span entry-qty>Total: 728 entries</span>
-        </div>
-        <div schedule-entry-col>
-          <span entry-name>SCHEDULE</span>
-          <span entry-qty>Total: 28 entries</span>
-        </div>
-        <div todo-entry-col>
-          <span entry-name>TO-DO LIST</span>
-          <span entry-qty>Total: 97 entries</span>
-        </div>
-      </div>
-
-      <!-- A Reminder tool -->
-      <div mid-nav-row2 reminder>
-        <div remind-col>
-          <img src="../images/ringbell.png" alt="Reminder Icon" />
-        </div>
-        <div remind-col>
-          <div remind-header>
-            <span remind-h>REMINDER</span>
-            <img remind-h src="../images/add-reminder.png" alt="New reminder icon" />
-          </div>
-          <div reminder-list>
-            <div a-to-do-item>
-              <span to-do-i do-thick></span>
-              <span to-do-i do-desc></span>
-            </div>
-            <div a-to-do-item>
-              <span to-do-i do-thick></span>
-              <span to-do-i do-desc></span>
-            </div>
-            <div a-to-do-item>
-              <span to-do-i do-thick></span>
-              <span to-do-i do-desc></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div right-nav nav-col>
-      <!-- A to-do list -->
-      <div right-nav-col to-do-list>
-        <div to-do-header>My Today To-do list</div>
-        <div to-dos>
-          <div a-to-do-item>
-            <span to-do-i do-thick></span>
-            <span to-do-i do-desc></span>
-            <img to-do-i src="../images/delete.png" title="delete" />
-          </div>
-          <div a-to-do-item>
-            <span to-do-i do-thick></span>
-            <span to-do-i do-desc></span>
-            <img to-do-i src="../images/delete.png" title="delete" />
-          </div>
-          <div a-to-do-item>
-            <span to-do-i do-thick></span>
-            <span to-do-i do-desc></span>
-            <img to-do-i src="../images/delete.png" title="delete" />
-          </div>
-          <div a-to-do-item>
-            <span to-do-i do-thick></span>
-            <span to-do-i do-desc></span>
-            <img to-do-i src="../images/delete.png" title="delete" />
-          </div>
-          <div a-to-do-item>
-            <span to-do-i do-thick></span>
-            <span to-do-i do-desc></span>
-            <img to-do-i src="../images/delete.png" title="delete" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Calculator -->
-      <div right-nav-col calculator>
-        <div calc-header>Simple Calculator</div>
-        <div calc-result></div>
-        <div calc-body>
-          <div calc-digits></div
-          ><div calc-ctrls></div>
-        </div>
-      </div>
-
-      <!-- A Calendar Tool -->
-      <div right-nav-col calendar>
-        <div cal-header> <!-- Head bar of the calendar -->
-          <select cal-head month></select>
-          <select cal-head year></select>
-        </div>
-        <div cal-body></div> <!-- Body of the calendar -->
-        <div cal-ctrls> <!-- Calendar controls -->
-          <img class="previous" src="../images/next.png" alt="previous" />
-          <img class="next" src="../images/next.png" alt="next" />
-        </div>
-      </div>
-
-    </div>
-  </div>
+  </nav>
+    
+  <nav left-nav nav-col>
+    <ul left-menu>
+      <li left-menu-el dashboard>
+        <a left-el-link>
+          <img src="../images/dashboard.png" alt="dashboard" />
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li left-menu-el>
+        <a href="./note.html" left-el-link title="Notes">
+          <img src="../images/notes.png" alt="note" />
+          <span>Note</span>
+        </a>
+      </li>
+      <li left-menu-el>
+        <a href="./contact.html" left-el-link title="Contacts">
+          <img src="../images/contact.png" alt="contact" />
+          <span>Contact</span>
+        </a>
+      </li>
+      <li left-menu-el>
+        <a href="./schedule.html" left-el-link title="Schedules">
+          <img src="../images/schedule.png" alt="schedule" />
+          <span>Schedule</span>
+        </a>
+      </li>
+      <li left-menu-el tools>
+        <a left-el-link href="#" title="Tools">
+          <img src="../images/tools.png" alt="tools" />
+          <span>Other Tools</span>
+        </a>
+      </li>
+      <li left-menu-el settings>
+        <a left-el-link href="./settings.html" title="Settings">
+          <img src="../images/setting.png" alt="settings" />
+          <span>Settings</span>
+        </a>
+      </li>
+      <li left-menu-el logout>
+        <a left-el-link href="./login.html" title="Logout">
+          <img src="../images/logout.png" alt="logout" />
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div box-layout />
+  
+  <footer />
+    
 </body>
 
 </html>

@@ -15,9 +15,9 @@
 }
 
 [content-nav] img {
-  border-radius: 70px 10px 70px 10px;
+  border-radius: 6px;
+  opacity: .6;
   width: 100%;
-  opacity: .3;
 }
 
 [image-data] {
@@ -27,7 +27,7 @@
 [text-data] {
   font-size: 20px;
   padding-left: 20px;
-  color: rgb(90, 110, 148);
+  color: #FFFFFF;
   font-family: 'Courier New', Courier, monospace;
 }
 

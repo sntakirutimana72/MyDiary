@@ -1,5 +1,5 @@
 body {
-  background-color: #fef;
+    background-color: white;
 }
 
 [diary-part] {
@@ -8,15 +8,6 @@ body {
   width: calc(100% - 30px);
   height: calc(100% - 40px);
   background-color: rgb(28, 29, 29);
-}
-
-div[header-bar] {
-  position: fixed;
-  border-bottom: 2px solid #111;
-}
-
-div[box-layout] {
-  margin-top: 50px;
 }
 
 [user-acc] {
@@ -30,7 +21,6 @@ div[box-layout] {
 }
 
 [user-acc] > i {
-  color: rgb(81, 238, 165);
   position: relative;
 }
 
@@ -45,20 +35,25 @@ div[box-layout] {
 }
 
 [user-acc-options] {
-  top: 18px;
+  top: 8px;
   z-index: 99;
   width: 220px;
   padding: 10px;
   display: none;
   position: relative;
-  border-radius: 20px 3px;
-  background-color: rgb(0, 25, 51);
+  border-radius: 8px;
+  box-shadow: 0 0 10px black;
+  background-color: rgb(50, 35, 50);
   -webkit-animation: toggleUser .2s;
   animation: toggleUser .2s;
 }
 
+[user-acc-options]:hover {
+  cursor: default;
+}
+
 [user-acc-opt-it], [user-acc] {
-  color: rgb(184, 231, 219);
+  color: rgb(235, 220, 191);
 }
 
 [user-acc-opt-it] {
@@ -91,7 +86,7 @@ img[user-acc-opt-it] {
   }
   to {
     opacity: 1;
-    top: 15px;
+    top: 8px;
   }
 }
 
@@ -102,8 +97,12 @@ img[user-acc-opt-it] {
   }
   to {
     opacity: 1;
-    top: 15px;
+    top: 8px;
   }
+}
+
+div[box-layout] {
+    margin-left: 180px;
 }
 
 [nav-col] {
@@ -116,15 +115,13 @@ ul[left-menu] {
 
 [nav-col][left-nav] {
   top: 40px;
+  left: 0;
   bottom: 0;
-  z-index: 3;
-  width: 30px;
+  width: 180px;
   position: fixed;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: rgb(23, 23, 24);
-  -webkit-transition: width .5s;
-  transition: width .5s;
+  background-color: rgb(50, 35.7, 50);
 }
 
 [nav-col][left-nav]::-webkit-scrollbar {
@@ -139,7 +136,7 @@ ul[left-menu] {
 [left-menu-el][dashboard] {
   margin-bottom: 15px;
   padding-bottom: 8px;
-  border-bottom: 4px solid rgba(19, 20, 26, .5);
+  border-bottom: 1px solid rgba(235, 198, 191, .2);
 }
 
 [left-menu-el][tools] {
@@ -160,8 +157,7 @@ ul[left-menu] {
   bottom: 4px;
   font-size: 11px;
   position: absolute;
-  color: rgba(255, 255, 255, .4);
-  font-family: 'Courier New', Courier, monospace;
+  color: rgb(235, 198, 191);
 }
 
 [mid-nav] {
@@ -366,15 +362,14 @@ img[to-do-i] {
   height: 12px;
   margin: 2px;
   border-radius: 50%;
-  border: 1px solid #ee0;
+  border: 1px solid #0fe;
 }
 
 [to-do-i][do-desc] {
   height: 8px;
   margin: 4px 0;
-  border-radius: 8px;
   width: calc(100% - 52px);
-  background-color: rgba(212, 203, 203, .3);
+  background-color: rgba(212, 203, 203, .7);
 }
 
 /* Mid-nav division */
